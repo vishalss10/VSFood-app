@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">VS Food</string>
     <string name="design_by_vishal">Design By\nVishal</string>
+    <string name="vs_food">VS Food</string>
+    <string name="deliever_favorite_food">Deliever Favorite Food</string>
+    <string name="design_by_nvishal">Design By\nVishal</string>
 </resources>
