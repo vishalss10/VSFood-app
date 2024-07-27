@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="92dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="@string/vs_food"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/deliever_favorite_food"
+        android:textColor="@color/textcolor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Sign Up Here"
+        android:textColor="@color/textcolor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/user_02"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/name"
+        android:paddingStart="@dimen/_15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/mail_02"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/email"
+        android:paddingStart="@dimen/_15dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/email"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/_15dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="@string/or"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Sign Up With"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/whitebutton"
+        android:drawableStart="@drawable/facebook_3_1"
+        android:drawablePadding="15dp"
+        android:paddingStart="15dp"
+        android:text="@string/facebook"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/whitebutton"
+        android:drawableLeft="@drawable/google_icon_2"
+        android:drawablePadding="8dp"
+        android:paddingLeft="15dp"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signbutton"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/greenbutton"
+        android:fontFamily="@font/yeon_sung"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Already Have An Account?"
+        android:textColor="@color/textcolor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/signbutton"
+        app:layout_constraintStart_toStartOf="@+id/signbutton"
+        app:layout_constraintTop_toBottomOf="@+id/signbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
