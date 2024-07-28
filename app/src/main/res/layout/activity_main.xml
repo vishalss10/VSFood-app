@@ -27,7 +27,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/yeon_sung"
         android:text="@string/explore_your_favorite_food"
-        android:textSize="28sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,8 +46,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
