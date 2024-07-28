@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation as implementation1
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -41,18 +43,19 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    implementation(libs.support.annotations)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
+    implementation1(libs.androidx.core.ktx)
+    implementation1(libs.androidx.appcompat)
+    implementation1(libs.material)
+    implementation1(libs.androidx.activity)
+    implementation1(libs.androidx.constraintlayout)
+    implementation1(libs.support.annotations)
+    implementation1(libs.androidx.navigation.fragment.ktx)
+    implementation1(libs.androidx.navigation.ui.ktx)
+    implementation1(libs.androidx.cardview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
+    implementation1("com.github.denzcoskun:ImageSlideshow:0.1.0")
 
 }

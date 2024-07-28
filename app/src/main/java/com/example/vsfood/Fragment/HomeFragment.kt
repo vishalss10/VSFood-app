@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.vsfood.R
 import com.example.vsfood.databinding.FragmentHomeBinding
@@ -40,6 +42,13 @@ class HomeFragment : Fragment() {
         val imageSlider = binding.imageSlider
         imageSlider.setImageList(imagelist)
         imageSlider.setImageList(imagelist,ScaleTypes.FIT)
+        imageSlider.setItemClickListener(object :ItemClickListener{
+            override fun onItemSelected(position: Int) {
+                val itemPosition = imagelist[position]
+                val itemMessage ="Selected Image $position"
+                Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_SHORT).show()
+            }
+        })
     }
 
 }
