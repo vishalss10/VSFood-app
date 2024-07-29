@@ -1,5 +1,6 @@
 package com.example.vsfood
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
@@ -22,6 +23,11 @@ class ChooseLocationActivity : AppCompatActivity() {
             Locationlist)
         val autoCompleteTextView = binding.listOfLocation
         autoCompleteTextView.setAdapter(adapter)
+
+        binding.donebutton.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
