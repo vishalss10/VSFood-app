@@ -27,10 +27,43 @@ private val itemquantity = IntArray(cartItem.size){1}
                cartimage.setImageResource(cartImage[position])
                cartquantity.text = quantity.toString()
 
+            binding.minsbutton.setOnClickListener{
+                deceaseQuantity(position)
+            }
 
+               binding.plusbutton.setOnClickListener{
+                   increaseQuantity(position)
+               }
+
+               binding.deletebutton.setOnClickListener {
+                   deleteItem(position)
+               }
 
            }
         }
+       private fun deceaseQuantity(position: Int){
+           if(itemquantity[position]>1)
+    {
+               itemquantity[position]--
+               binding.cartquantity.text=itemquantity[position].toString()
+    }
+}
+       private fun increaseQuantity(position: Int){
+           if(itemquantity[position]<10)
+           {
+               itemquantity[position]++
+               binding.cartquantity.text=itemquantity[position].toString()
+           }
+       }
+
+       private fun deleteItem(position: Int)
+       {
+           cartItem.removeAt(position)
+           cartItemprice.removeAt(position)
+           cartImage.removeAt(position)
+           notifyItemRemoved(position)
+           notifyItemRangeChanged(position,cartItem.size)
+       }
 
     }
 
