@@ -11,6 +11,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.vsfood.Adapter.popularAdapter
+import com.example.vsfood.MenuBottomSheetFragment
 import com.example.vsfood.R
 import com.example.vsfood.databinding.FragmentHomeBinding
 
@@ -30,6 +31,11 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater,container,false)
+
+        binding.ViewMenu.setOnClickListener {
+            val bottomSheetDialog = MenuBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager,"Test")
+        }
         return binding.root
 
     }
