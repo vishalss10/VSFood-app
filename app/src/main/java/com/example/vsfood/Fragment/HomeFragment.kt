@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
 
         binding.ViewMenu.setOnClickListener {
             val bottomSheetDialog = MenuBottomSheetFragment()
-            bottomSheetDialog.show(parentFragmentManager,"Test")
+            bottomSheetDialog.show(/* manager = */ parentFragmentManager,/* tag = */ "Test")
         }
         return binding.root
 
