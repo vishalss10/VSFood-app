@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vsfood.databinding.MenuItemBinding
 
-class MenuAdapter (private val MenuItemName: MutableList<String>,
-                   private val MenuPrice:MutableList<String>,
-                   private val MenuImage:MutableList<Int>): RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
+class MenuAdapter(private val MenuItemName: MutableList<String>,
+                  private val MenuPrice:MutableList<String>,
+                  private val MenuImage:MutableList<Int>): RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {

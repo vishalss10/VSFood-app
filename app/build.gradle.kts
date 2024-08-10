@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.vsfood"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -43,6 +43,7 @@ android {
 
 dependencies {
 
+    implementation1(libs.car.ui.lib)
     implementation1(libs.androidx.core.ktx)
     implementation1(libs.androidx.appcompat)
     implementation1(libs.material)
