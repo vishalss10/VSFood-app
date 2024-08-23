@@ -43,6 +43,15 @@ android {
 
 dependencies {
 
+    implementation1(libs.material)
+    implementation1(libs.androidx.appcompat)
+    implementation1(libs.androidx.constraintlayout)
+    implementation1(libs.androidx.navigation.fragment.ktx)
+    implementation1(libs.androidx.navigation.ui.ktx)
+    implementation1(libs.androidx.appcompat)
+    implementation1(libs.material)
+    implementation1(libs.androidx.activity)
+    implementation1(libs.androidx.constraintlayout)
     implementation1(libs.car.ui.lib)
     implementation1(libs.androidx.core.ktx)
     implementation1(libs.androidx.appcompat)
